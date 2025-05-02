@@ -351,21 +351,38 @@ func selectOrderType(config *Config, orderType string, limitPrice float64, exten
 		if err := mouseClick(config.MarketOrder[0], config.MarketOrder[1], 1); err != nil {
 			return err
 		}
+
+		//Click twice just incase
+		if err := mouseClick(config.MarketOrder[0], config.MarketOrder[1], 1); err != nil {
+			return err
+		}
+
 	case "limit":
 		if err := mouseClick(config.LimitOrder[0], config.LimitOrder[1], 1); err != nil {
 			return err
 		}
 
+		//Click twice just incase
+		if err := mouseClick(config.LimitOrder[0], config.LimitOrder[1], 1); err != nil {
+			return err
+		}
+		
 		// Add a longer delay here to give the UI time to respond
-		humanLikeDelay(0.2, 0.4)
+		humanLikeDelay(0.45, 0.65) // Increased by 1/4 second
 
 		if err := mouseClick(config.LimitPriceBox[0], config.LimitPriceBox[1], 1); err != nil {
 			return err
 		}
 
+		// Add a small delay before typing to ensure the input field is ready
+		humanLikeDelay(0.25, 0.4)
+
 		if err := typeText(fmt.Sprintf("%.2f", limitPrice), true); err != nil {
 			return err
 		}
+		
+		// Add a delay after entering the price to allow the UI to process it
+		humanLikeDelay(0.25, 0.4)
 	default:
 		return fmt.Errorf("invalid order type: %s, must be 'market' or 'limit'", orderType)
 	}

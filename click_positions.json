@@ -1,78 +1,82 @@
 {
     "account_brokeragelink": [
-        1560,
-        405
+        1613,
+        406
     ],
     "account_dropdown": [
-        1613,
-        310
+        1614,
+        307
     ],
     "account_hsa": [
-        1525,
-        378
+        1598,
+        374
     ],
     "account_individual": [
-        1520,
+        1605,
         429
     ],
     "account_roth": [
-        1544,
-        329
+        1573,
+        330
     ],
     "account_traditional": [
-        1511,
-        359
+        1605,
+        354
     ],
     "amount_box": [
-        1515,
-        385
+        1513,
+        384
     ],
     "buy_button": [
-        1522,
-        357
+        1525,
+        356
     ],
     "day_dropdown": [
-        1532,
-        463
+        1544,
+        464
+    ],
+    "day_option": [
+        1541,
+        493
     ],
     "day_plus_option": [
-        1552,
-        517
+        1567,
+        519
     ],
     "limit_order": [
-        1602,
-        412
+        1591,
+        410
     ],
     "limit_price_box": [
-        1518,
+        1526,
         437
     ],
     "market_order": [
         1523,
-        410
+        411
     ],
     "options_button": [
-        1517,
-        275
+        1509,
+        279
     ],
     "place_order_button": [
-        1577,
-        608
+        1584,
+        610
     ],
     "screen_focus": [
-        1473,
-        277
+        1478,
+        278
     ],
     "sell_button": [
-        1610,
-        359
+        1614,
+        358
     ],
     "stocks_button": [
-        1461,
-        271
+        1466,
+        277
     ],
     "ticker_box": [
-        1531,
-        336
+        1521,
+        331
     ]
 }

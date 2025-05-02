@@ -170,10 +170,14 @@ def select_order_type(config, order_type, limit_price=None, extended_hours=False
     elif order_type.lower() == "limit":
         click(config["limit_order"])
         # Add a longer delay here to give the UI time to respond
-        human_like_delay(0.2, 0.4)
+        human_like_delay(0.45, 0.65)  # Increased by 1/4 second
         if limit_price is not None:
             click(config["limit_price_box"])
+            # Add a small delay before typing to ensure the input field is ready
+            human_like_delay(0.25, 0.4)
             type_text(limit_price, press_enter=True)
+            # Add a delay after entering the price to allow the UI to process it
+            human_like_delay(0.25, 0.4)
         else:
             logging.error("Limit price is required for limit orders")
             print("Error: Limit price is required for limit orders")
