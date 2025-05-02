@@ -1,0 +1,78 @@
+{
+    "account_brokeragelink": [
+        1560,
+        405
+    ],
+    "account_dropdown": [
+        1613,
+        310
+    ],
+    "account_hsa": [
+        1525,
+        378
+    ],
+    "account_individual": [
+        1520,
+        429
+    ],
+    "account_roth": [
+        1544,
+        329
+    ],
+    "account_traditional": [
+        1511,
+        359
+    ],
+    "amount_box": [
+        1515,
+        385
+    ],
+    "buy_button": [
+        1522,
+        357
+    ],
+    "day_dropdown": [
+        1532,
+        463
+    ],
+    "day_plus_option": [
+        1552,
+        517
+    ],
+    "limit_order": [
+        1602,
+        412
+    ],
+    "limit_price_box": [
+        1518,
+        437
+    ],
+    "market_order": [
+        1523,
+        410
+    ],
+    "options_button": [
+        1517,
+        275
+    ],
+    "place_order_button": [
+        1577,
+        608
+    ],
+    "screen_focus": [
+        1473,
+        277
+    ],
+    "sell_button": [
+        1610,
+        359
+    ],
+    "stocks_button": [
+        1461,
+        271
+    ],
+    "ticker_box": [
+        1531,
+        336
+    ]
+}

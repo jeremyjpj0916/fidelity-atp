@@ -1,0 +1,101 @@
+2025/05/02 02:52:04 Trading bot started
+2025/05/02 02:55:07 Trading bot started
+2025/05/02 02:58:51 Trading bot started
+2025/05/02 02:59:03 Error: error getting mouse position: exit status 1
+2025/05/02 03:01:38 Trading bot started
+2025/05/02 03:01:48 Error: error getting mouse position: exit status 1
+2025/05/02 03:04:24 Trading bot started
+2025/05/02 03:04:46 Trading bot started
+2025/05/02 03:17:28 Trading bot started
+2025/05/02 03:17:53 Trading bot started
+2025/05/02 03:20:21 Trading bot started
+2025/05/02 03:23:04 Trading bot started
+2025/05/02 03:23:27 Trading bot started
+2025/05/02 03:24:28 Operation completed successfully
+2025/05/02 03:24:36 Trading bot started
+2025/05/02 03:28:09 Trading bot started
+2025/05/02 03:29:07 Trading bot started
+2025/05/02 03:30:08 Trading bot started
+2025/05/02 03:31:25 Operation completed successfully
+2025/05/02 03:36:43 Trading bot started
+2025/05/02 03:36:43 Executing buy order: 1 shares of PLX as limit order
+2025/05/02 03:37:01 Operation completed successfully
+2025/05/02 03:37:35 Trading bot started
+2025/05/02 03:37:35 Executing buy order: 1 shares of PLX as limit order
+2025/05/02 03:37:50 Operation completed successfully
+2025/05/02 03:38:17 Trading bot started
+2025/05/02 03:38:17 Executing buy order: 1 shares of VYNE as limit order
+2025/05/02 03:38:32 Operation completed successfully
+2025/05/02 03:40:51 Trading bot started
+2025/05/02 03:40:51 Executing buy order: 1 shares of VYNE as limit order
+2025/05/02 03:41:05 Operation completed successfully
+2025/05/02 03:41:38 Trading bot started
+2025/05/02 03:41:38 Executing buy order: 1 shares of VYNE as limit order
+2025/05/02 03:41:52 Operation completed successfully
+2025/05/02 03:43:34 Trading bot started
+2025/05/02 03:43:34 Executing buy order: 1 shares of VYNE as limit order
+2025/05/02 03:43:45 Operation completed successfully
+2025/05/02 03:43:55 Trading bot started
+2025/05/02 03:43:55 Executing buy order: 1 shares of VYNE as limit order
+2025/05/02 03:44:05 Operation completed successfully
+2025/05/02 03:44:45 Trading bot started
+2025/05/02 03:44:45 Executing buy order: 1 shares of VYNE as limit order
+2025/05/02 03:44:56 Operation completed successfully
+2025/05/02 03:45:42 Trading bot started
+2025/05/02 03:45:42 Executing buy order: 1 shares of VYNE as limit order
+2025/05/02 03:45:52 Operation completed successfully
+2025/05/02 03:49:23 Trading bot started
+2025/05/02 03:49:23 Executing buy order (Batch 1): 0 shares of PLX as limit order
+2025/05/02 03:49:32 Executing buy order (Batch 2): 0 shares of PLX as limit order
+2025/05/02 03:49:40 Executing buy order (Batch 3): 0 shares of PLX as limit order
+2025/05/02 03:49:47 Operation completed successfully
+2025/05/02 03:57:02 Trading bot started
+2025/05/02 03:57:02 Executing buy order (Batch 1): 1 shares of PLX as limit order
+2025/05/02 03:57:12 Executing buy order (Batch 2): 1 shares of PLX as limit order
+2025/05/02 03:57:20 Executing buy order (Batch 3): 1 shares of PLX as limit order
+2025/05/02 03:57:27 Operation completed successfully
+2025/05/02 03:57:52 Trading bot started
+2025/05/02 03:57:52 Executing buy order (Batch 1): 1 shares of PLX as limit order
+2025/05/02 03:58:01 Executing buy order (Batch 2): 1 shares of PLX as limit order
+2025/05/02 03:58:11 Executing buy order (Batch 3): 1 shares of PLX as limit order
+2025/05/02 03:58:18 Operation completed successfully
+2025/05/02 04:02:04 Trading bot started
+2025/05/02 04:02:04 Executing buy order (Batch 1): 1 shares of PLX as limit order
+2025/05/02 04:02:14 Executing buy order (Batch 2): 1 shares of PLX as limit order
+2025/05/02 04:02:24 Executing buy order (Batch 3): 1 shares of PLX as limit order
+2025/05/02 04:02:32 Operation completed successfully
+2025/05/02 04:03:35 Trading bot started
+2025/05/02 04:03:35 Executing sell order (Batch 1): 1 shares of PLX as limit order
+2025/05/02 04:03:46 Executing sell order (Batch 2): 1 shares of PLX as limit order
+2025/05/02 04:03:59 Executing sell order (Batch 3): 1 shares of PLX as limit order
+2025/05/02 04:04:10 Operation completed successfully
+2025/05/02 04:08:40 Trading bot started
+2025/05/02 04:09:55 Operation completed successfully
+2025/05/02 04:10:15 Trading bot started
+2025/05/02 04:10:15 Executing sell order: 1 shares of PLX as limit order
+2025/05/02 04:10:24 Operation completed successfully
+2025/05/02 04:13:56 Trading bot started
+2025/05/02 04:13:56 Executing sell order: 1 shares of PLX as limit order
+2025/05/02 04:14:04 Operation completed successfully
+2025/05/02 04:15:31 Trading bot started
+2025/05/02 04:15:31 Executing sell order: 1 shares of PLX as limit order
+2025/05/02 04:15:40 Operation completed successfully
+2025/05/02 04:16:17 Trading bot started
+2025/05/02 04:16:17 Executing sell order: 1 shares of PLX as limit order
+2025/05/02 04:16:25 Operation completed successfully
+2025/05/02 04:16:42 Trading bot started
+2025/05/02 04:16:49 Trading bot started
+2025/05/02 04:16:49 Executing sell order: 1 shares of PLX as limit order
+2025/05/02 04:16:59 Operation completed successfully
+2025/05/02 04:17:03 Trading bot started
+2025/05/02 04:17:03 Executing sell order: 1 shares of PLX as limit order
+2025/05/02 04:17:13 Operation completed successfully
+2025/05/02 04:17:24 Trading bot started
+2025/05/02 04:17:24 Executing sell order: 1 shares of PLX as limit order
+2025/05/02 04:17:34 Operation completed successfully
+2025/05/02 04:19:50 Trading bot started
+2025/05/02 04:19:50 Executing sell order: 1 shares of PLX as limit order
+2025/05/02 04:20:01 Operation completed successfully
+2025/05/02 04:20:15 Trading bot started
+2025/05/02 04:20:15 Executing sell order: 1 shares of PLX as limit order
+2025/05/02 04:20:25 Operation completed successfully
