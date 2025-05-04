@@ -1,5 +1,7 @@
 # Fidelity Active Trader Pro - Automated Trading Bot
 
++> **DISCLAIMER: This tool is provided "as is", without warranty of any kind. Use at your own risk. The authors are not responsible for any financial losses, errors, or issues that may arise from using this automated trading tool. Always verify trades and monitor your account when using automated trading solutions.**
+
 A powerful automation tool designed to interact with Fidelity's Active Trader Pro platform for executing trades quickly and efficiently. This project includes two implementations:
 
 1. **Python Implementation** (`trading_bot.py`) - Uses PyAutoGUI for GUI automation
@@ -26,6 +28,24 @@ A powerful automation tool designed to interact with Fidelity's Active Trader Pr
 - Go 1.16+
 - Build the executable: `go build trading_bot.go`
 
+## Installation
+
+### Python Implementation
+```bash
+# Install required packages (if using Python 3.11)
+/opt/homebrew/bin/python3.11 -m pip install pyautogui pynput
+
+# If you have multiple Python versions installed, make sure to run the script with the same Python version where you installed the packages
+```
+
+### Go Implementation
+```bash
+# Build the Go executable
+go mod init
+go mod tidy
+go build trading_bot.go
+```
+
 ## Setup Guide
 
 Before using either trading bot, you must record the positions of UI elements in the Fidelity Active Trader Pro interface.
@@ -41,7 +61,7 @@ Both the Python and Go implementations now use the same **click-based** recordin
 **Steps:**
 
 1.  Run the desired implementation in recording mode:
-    -   **Python:** `python trading_bot.py record_positions`
+    -   **Python:** `/opt/homebrew/bin/python3.11 trading_bot.py record_positions`
     -   **Go:** `go build trading_bot.go && ./trading_bot -mode record_positions`
 2.  The script will prompt you for each UI element needed (e.g., "Click the Stocks button").
 3.  Move your mouse cursor over the corresponding element in the Fidelity ATP window.
@@ -58,17 +78,17 @@ This method ensures accurate coordinates are captured exactly where you click, p
 
 1. **Basic Market Order (Buy Shares)**
    ```bash
-   python trading_bot.py trade --trade_type stocks --account Roth --ticker AAPL --action buy --amount 10 --order_type market
+   /opt/homebrew/bin/python3.11 trading_bot.py trade --trade_type stocks --account Roth --ticker AAPL --action buy --amount 10 --order_type market
    ```
 
 2. **Limit Order with Extended Hours Trading**
    ```bash
-   python trading_bot.py trade --trade_type stocks --account HSA --ticker NVDA --action buy --amount 5 --order_type limit --limit_price 850.50 --extended_hours
+   /opt/homebrew/bin/python3.11 trading_bot.py trade --trade_type stocks --account HSA --ticker NVDA --action buy --amount 5 --order_type limit --limit_price 850.50 --extended_hours
    ```
 
 3. **Repeating an Order Multiple Times**
    ```bash
-   python trading_bot.py trade --trade_type stocks --account Traditional --ticker AMZN --action sell --amount 100 --order_type limit --limit_price 180.25 --repeat 5 --min_pause 1 --max_pause 3
+   /opt/homebrew/bin/python3.11 trading_bot.py trade --trade_type stocks --account Traditional --ticker AMZN --action sell --amount 100 --order_type limit --limit_price 180.25 --repeat 5 --min_pause 1 --max_pause 3
    ```
 
 ### Go Implementation
@@ -145,6 +165,9 @@ This method ensures accurate coordinates are captured exactly where you click, p
 
 ## Security
 
-- The bot does not store or transmit your Fidelity credentials
-- All operations rely on an already authenticated Fidelity ATP session
-- Consider using a dedicated device for automated trading to minimize security risks
++- **USE AT YOUR OWN RISK**: This automated trading tool is provided without any guarantees. You are solely responsible for all trading decisions and outcomes when using this tool.
++- Trading activities are performed through UI automation and not through official APIs, which carries inherent risks.
++- The bot does not store or transmit your credentials
++- For extra security, consider running trades in smaller amounts or using the `--repeat` parameter instead of large single orders
++- Always monitor the bot during operation and be prepared to manually intervene if necessary
++- Thoroughly test with small amounts before committing to larger trades

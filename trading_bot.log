@@ -202,3 +202,31 @@
 2025/05/04 04:11:46 Executing buy order (Batch 1): 1 shares of PLX as market order
 2025/05/04 04:11:57 Executing buy order (Batch 2): 1 shares of PLX as market order
 2025/05/04 04:12:07 Operation completed successfully
+2025/05/04 04:15:15 Trading bot started
+2025/05/04 04:15:15 ERROR: extended hours trading (Day+) requires limit orders. Market orders are not supported during pre-market or after-hours trading
+2025/05/04 04:15:15 Error: extended hours trading (Day+) requires limit orders. Market orders are not supported during pre-market or after-hours trading
+2025/05/04 04:16:23 Trading bot started
+2025/05/04 04:16:23 Executing buy order: 1 shares of PLX as limit order
+2025/05/04 04:16:36 Operation completed successfully
+2025/05/04 04:16:46 Trading bot started
+2025/05/04 04:16:46 Executing sell order: 1 shares of PLX as limit order
+2025/05/04 04:16:59 Operation completed successfully
+2025/05/04 04:17:03 Trading bot started
+2025/05/04 04:17:03 Executing sell order: 1 shares of PLX as limit order
+2025/05/04 04:17:15 Operation completed successfully
+2025/05/04 04:17:19 Trading bot started
+2025/05/04 04:17:19 Executing sell order: 1 shares of PLX as limit order
+2025/05/04 04:17:31 Operation completed successfully
+2025/05/04 04:17:36 Trading bot started
+2025/05/04 04:17:36 Executing sell order: 1 shares of PLX as limit order
+2025/05/04 04:17:49 Operation completed successfully
+2025/05/04 04:17:52 Trading bot started
+2025/05/04 04:17:52 Executing sell order: 1 shares of PLX as limit order
+2025/05/04 04:18:05 Operation completed successfully
+2025/05/04 04:18:18 Trading bot started
+2025/05/04 04:18:18 Executing sell order: 1 shares of PLX as limit order
+2025/05/04 04:18:31 Operation completed successfully
+2025-05-04 04:24:05,108 - INFO - Executing buy order: 1 shares of PLX as market order
+2025-05-04 04:25:30,563 - INFO - Executing buy order: 1 shares of PLX as market order
+2025-05-04 04:26:02,137 - INFO - Executing buy order: 1 shares of PLX as market order
+2025-05-04 04:26:27,988 - INFO - Executing sell order: 1 shares of PLX as market order
