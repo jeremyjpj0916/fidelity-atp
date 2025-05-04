@@ -152,7 +152,6 @@ This method ensures accurate coordinates are captured exactly where you click, p
 
 ## Performance Considerations
 
-- The Go implementation typically offers better performance for repeated trades
 - For larger orders, using the `--repeat` parameter can help distribute your orders over time and reduce market impact
 - Adjust the `--min_pause` and `--max_pause` values based on market conditions and the responsiveness of Fidelity ATP
 
