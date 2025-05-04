@@ -502,6 +502,14 @@ func executeTrade(params *TradeParams) error {
 		return fmt.Errorf("failed to load config: %v", err)
 	}
 
+	// Check that extended hours trading only uses limit orders
+	if params.ExtendedHours && strings.ToLower(params.OrderType) == "market" {
+		err := fmt.Errorf("extended hours trading (Day+) requires limit orders. Market orders are not supported during pre-market or after-hours trading")
+		logger.Println("ERROR:", err)
+		fmt.Println("ERROR:", err)
+		return err
+	}
+
 	// If repeat is enabled, execute the same trade multiple times
 	if params.Repeat > 1 {
 		fmt.Printf("Executing the same %s order for %.0f shares %d times\n",

@@ -198,3 +198,7 @@
 2025/05/04 04:08:23 Trading bot started
 2025/05/04 04:08:23 Executing buy order: 1 shares of PLX as limit order
 2025/05/04 04:08:36 Operation completed successfully
+2025/05/04 04:11:46 Trading bot started
+2025/05/04 04:11:46 Executing buy order (Batch 1): 1 shares of PLX as market order
+2025/05/04 04:11:57 Executing buy order (Batch 2): 1 shares of PLX as market order
+2025/05/04 04:12:07 Operation completed successfully

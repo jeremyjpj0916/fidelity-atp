@@ -107,11 +107,16 @@ This method ensures accurate coordinates are captured exactly where you click, p
 
 ## Important Notes
 
-1. **Do not move the Fidelity ATP window** after recording positions
-2. Keep the Fidelity ATP window visible and active during trading
-3. The bot logs all activities to `trading_bot.log`
-4. For limit orders, the `--limit_price` parameter is required
-5. The Go implementation generally offers better performance for frequent trades
+- The trading bot interacts with Fidelity's UI, so it needs to be run on a machine where Fidelity ATP is installed and logged in
+- **Fidelity-specific restrictions apply:**
+  - For extended hours trading (pre-market or after-hours), only limit orders are supported by Fidelity
+  - The bot will return an error if you try to use market orders with the `--extended_hours` option
+- Price and volume information may have 15-20 minute delays unless you have real-time data enabled in Fidelity
+- Do not move the Fidelity ATP window after recording positions
+- Keep the Fidelity ATP window visible and active during trading
+- The bot logs all activities to `trading_bot.log`
+- For limit orders, the `--limit_price` parameter is required
+- The Go implementation generally offers better performance for frequent trades
 
 ## Troubleshooting
 

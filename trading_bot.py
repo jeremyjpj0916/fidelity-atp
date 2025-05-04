@@ -253,6 +253,12 @@ def execute_trade(args):
     """Execute the stock trade based on CLI inputs, potentially repeating the order multiple times."""
     config = load_config()
     
+    # Check that extended hours trading only uses limit orders
+    if args.extended_hours and args.order_type.lower() == "market":
+        logging.error("Extended hours trading (Day+) requires limit orders. Market orders are not supported during pre-market or after-hours trading.")
+        print("ERROR: Extended hours trading (Day+) requires limit orders. Market orders are not supported during pre-market or after-hours trading.")
+        return
+    
     # If repeat is enabled, execute the same trade multiple times
     if args.repeat > 1:
         print(f"Executing the same {args.action} order for {args.amount} shares {args.repeat} times")
