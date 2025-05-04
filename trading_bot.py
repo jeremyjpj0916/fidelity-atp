@@ -120,7 +120,7 @@ def type_text(text, press_enter=True):
     if press_enter:
         human_like_delay(0.05, 0.15)  # Reduced delay before pressing enter
         pyautogui.press('enter')
-        human_like_delay(0.05, 0.15)  # Add a small delay after pressing Enter
+        human_like_delay(0.1, 0.2)  # Add a small delay after pressing Enter
     human_like_delay(0.05, 0.4)  # Reduced default delay after typing
 
 def select_account(config, account_type):
@@ -148,7 +148,9 @@ def select_trade_action(config, action):
     """Select buy or sell action."""
     if action.lower() == "buy":
         click(config["buy_button"])
+        click(config["buy_button"])
     elif action.lower() == "sell":
+        click(config["sell_button"])
         click(config["sell_button"])
     else:
         logging.error(f"Invalid action: {action}")
@@ -161,8 +163,8 @@ def enter_amount(config, amount):
     """Enter the trading amount (shares)."""
     click(config["amount_box"])
     # Format as integer for shares
-    type_text(int(amount), press_enter=False)
-    human_like_delay(0.15, 0.3)
+    type_text(int(amount), press_enter=True)
+    human_like_delay(0.6, 0.8)
 
 def select_order_type(config, order_type, limit_price=None, extended_hours=False):
     """Select the order type and related settings."""

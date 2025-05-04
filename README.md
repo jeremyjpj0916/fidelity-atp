@@ -20,13 +20,24 @@ A powerful automation tool designed to interact with Fidelity's Active Trader Pr
 
 ## Prerequisites
 
-### For Python Implementation
-- Python 3.6+
-- PyAutoGUI library: `pip install pyautogui`
+Before using the trading bot, ensure the following:
 
-### For Go Implementation
-- Go 1.16+
-- Build the executable: `go build trading_bot.go`
+1. **Install Fidelity Active Trader Pro**: Download and install Fidelity's ATP platform
+2. **Log in to your Fidelity account**: The bot will use your already-authenticated session
+3. **Required ATP Settings**: Configure your ATP with these settings:
+
+![Required ATP Settings](needed_settings.png)
+
+4. **Required Python packages** (for Python implementation):
+   ```bash
+   /opt/homebrew/bin/python3.11 -m pip install pyautogui pynput
+   ```
+
+5. **Go dependencies** (for Go implementation):
+   ```bash
+   go mod init
+   go mod tidy
+   ```
 
 ## Installation
 
