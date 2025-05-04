@@ -4,8 +4,8 @@
 
 A powerful automation tool designed to interact with Fidelity's Active Trader Pro platform for executing trades quickly and efficiently. This project includes two implementations:
 
-1. **Python Implementation** (`trading_bot.py`) - Uses PyAutoGUI for GUI automation
-2. **Go Implementation** (`trading_bot.go`) - Higher performance alternative using AppleScript for macOS
+1. **Python Implementation** (`trading_bot.py`) - Uses PyAutoGUI and pynput for cross-platform GUI automation
+2. **Go Implementation** (`trading_bot.go`) - Higher performance alternative using robotgo for cross-platform automation
 
 ## Features
 
@@ -14,7 +14,7 @@ A powerful automation tool designed to interact with Fidelity's Active Trader Pr
 - Trading by share quantity
 - Market and limit order support
 - Extended hours trading with Day+ option
-- Order chunking for breaking large orders into multiple smaller batches
+- Order repeating functionality for executing the same order multiple times
 - Interactive position recording for GUI element locations
 - Logging of all trading activities
 
@@ -147,7 +147,14 @@ This method ensures accurate coordinates are captured exactly where you click, p
 - Keep the Fidelity ATP window visible and active during trading
 - The bot logs all activities to `trading_bot.log`
 - For limit orders, the `--limit_price` parameter is required
+- Both implementations use triple-clicking for order type selection to improve reliability
 - The Go implementation generally offers better performance for frequent trades
+
+## Performance Considerations
+
+- The Go implementation typically offers better performance for repeated trades
+- For larger orders, using the `--repeat` parameter can help distribute your orders over time and reduce market impact
+- Adjust the `--min_pause` and `--max_pause` values based on market conditions and the responsiveness of Fidelity ATP
 
 ## Troubleshooting
 
@@ -167,12 +174,6 @@ This method ensures accurate coordinates are captured exactly where you click, p
 3. **Command Errors**
    - Ensure all required parameters are provided
    - Verify parameter values are in the correct format
-
-## Performance Considerations
-
-- The Go implementation typically offers better performance for repeated trades
-- For larger orders, using the `--repeat` parameter can help distribute your orders over time
-- Adjust the `--min_pause` and `--max_pause` values based on market conditions
 
 ## Security
 
