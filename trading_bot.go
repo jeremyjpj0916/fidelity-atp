@@ -121,6 +121,8 @@ func typeText(text string, pressEnter bool) error {
 	if pressEnter {
 		robotgo.KeyTap("enter")
 	}
+
+	humanLikeDelay(0.05, 0.15)
  
 	return nil
 }
@@ -357,6 +359,11 @@ func selectOrderType(config *Config, orderType string, limitPrice float64, exten
 			return err
 		}
 
+		//Click three times just incase
+		if err := mouseClick(config.MarketOrder[0], config.MarketOrder[1], 1); err != nil {
+			return err
+		}
+
 	case "limit":
 		if err := mouseClick(config.LimitOrder[0], config.LimitOrder[1], 1); err != nil {
 			return err
@@ -366,9 +373,14 @@ func selectOrderType(config *Config, orderType string, limitPrice float64, exten
 		if err := mouseClick(config.LimitOrder[0], config.LimitOrder[1], 1); err != nil {
 			return err
 		}
+
+		//Click three times just incase
+		if err := mouseClick(config.LimitOrder[0], config.LimitOrder[1], 1); err != nil {
+			return err
+		}
 		
 		// Add a longer delay here to give the UI time to respond
-		humanLikeDelay(0.45, 0.65) // Increased by 1/4 second
+		humanLikeDelay(0.6, 0.8) // Increased by 1/4 second
 
 		if err := mouseClick(config.LimitPriceBox[0], config.LimitPriceBox[1], 1); err != nil {
 			return err

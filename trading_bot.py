@@ -120,6 +120,7 @@ def type_text(text, press_enter=True):
     if press_enter:
         human_like_delay(0.05, 0.15)  # Reduced delay before pressing enter
         pyautogui.press('enter')
+        human_like_delay(0.05, 0.15)  # Add a small delay after pressing Enter
     human_like_delay(0.05, 0.4)  # Reduced default delay after typing
 
 def select_account(config, account_type):
@@ -167,10 +168,14 @@ def select_order_type(config, order_type, limit_price=None, extended_hours=False
     """Select the order type and related settings."""
     if order_type.lower() == "market":
         click(config["market_order"])
+        click(config["market_order"])
+        click(config["market_order"])
     elif order_type.lower() == "limit":
         click(config["limit_order"])
+        click(config["limit_order"])
+        click(config["limit_order"])
         # Add a longer delay here to give the UI time to respond
-        human_like_delay(0.45, 0.65)  # Increased by 1/4 second
+        human_like_delay(0.6, 0.8)  # Increased delay to match Go implementation
         if limit_price is not None:
             click(config["limit_price_box"])
             # Add a small delay before typing to ensure the input field is ready
